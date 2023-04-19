@@ -1,11 +1,11 @@
 package app
 
-type Configuration struct {
-	DB DBConfiguration
+type Config struct {
+	Global GlobalConfig `toml:"global"`
 }
 
-type DBConfiguration struct {
-	Username string `toml:"user"`
-	Password string `toml:"pass"`
-	DBName   string `toml:"db"`
+type GlobalConfig struct {
+	Width           int    `toml:"width"`
+	Height          int    `toml:"height"`
+	OutputDirectory string `toml:"output_directory"`
 }

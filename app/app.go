@@ -7,13 +7,13 @@ import (
 )
 
 func Greet() {
-	var c Configuration
-	_, err := toml.DecodeFile("config.toml", &c)
+	var config Config
+	_, err := toml.DecodeFile("config.toml", &config)
 	if err != nil {
 		fmt.Println("Failed to decode file : ", err)
 		return
 	}
-	fmt.Println("DB username: ", c.DB.Username)
-	fmt.Println("DB password: ", c.DB.Password)
-	fmt.Println("DB name: ", c.DB.DBName)
+	fmt.Println("Width: ", config.Global.Width)
+	fmt.Println("Height: ", config.Global.Height)
+	fmt.Println("Output Directory: ", config.Global.OutputDirectory)
 }
