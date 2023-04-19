@@ -6,7 +6,7 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
-func Greet() {
+func App() {
 	var config Config
 	_, err := toml.DecodeFile("config.toml", &config)
 	if err != nil {

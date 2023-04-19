@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	app.Greet()
+	app.App()
 }
