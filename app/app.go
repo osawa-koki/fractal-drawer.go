@@ -2,8 +2,9 @@ package app
 
 import (
 	"fmt"
-	"github.com/BurntSushi/toml"
 	"os"
+
+	"github.com/BurntSushi/toml"
 )
 
 func Greet() {
@@ -20,5 +21,7 @@ func Greet() {
 	}
 
 	// パース結果を表示
-	fmt.Println("Title:", config.Title)
+	fmt.Println("Width:", config.global.Width)
+	fmt.Println("Height:", config.global.Height)
+	fmt.Println("Output File:", config.global.OutputDirectory)
 }

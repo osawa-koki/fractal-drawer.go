@@ -1,5 +1,5 @@
 package app
 
 type Config struct {
-	Title string
+	global ConfigGlobal `toml:"global"`
 }
