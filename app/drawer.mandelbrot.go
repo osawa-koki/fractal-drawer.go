@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func MandelbrotDrawer(config MandelbrotConfig) {
+func MandelbrotDrawer(config *MandelbrotConfig) {
 	width := config.Width
 	height := config.Height
 

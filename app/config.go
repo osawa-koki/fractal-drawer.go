@@ -1,9 +1,9 @@
 package app
 
 type Config struct {
-	Global     GlobalConfig     `toml:"global"`
-	Mandelbrot MandelbrotConfig `toml:"mandelbrot"`
-	Julia      JuliaConfig      `toml:"julia"`
+	Global     *GlobalConfig     `toml:"global"`
+	Mandelbrot *MandelbrotConfig `toml:"mandelbrot"`
+	Julia      *JuliaConfig      `toml:"julia"`
 }
 
 type GlobalConfig struct {

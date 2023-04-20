@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func JuliaDrawer(config JuliaConfig) {
+func JuliaDrawer(config *JuliaConfig) {
 	width := config.Width
 	height := config.Height
 
