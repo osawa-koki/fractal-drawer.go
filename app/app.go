@@ -2,7 +2,7 @@ package app
 
 import (
 	"fmt"
-
+  "path/filepath"
 	"github.com/BurntSushi/toml"
 )
 
@@ -13,7 +13,10 @@ func App() {
 		fmt.Println("Failed to decode file: ", err)
 		return
 	}
-	fmt.Println("Width: ", config.Global.Width)
-	fmt.Println("Height: ", config.Global.Height)
-	fmt.Println("Output Directory: ", config.Global.OutputDirectory)
+
+	config.Mandelbrot.Width = config.Global.Width
+	config.Mandelbrot.Height = config.Global.Height
+	config.Mandelbrot.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Mandelbrot.OutputFile)
+
+	MandelbrotDrawer(config.Mandelbrot)
 }
