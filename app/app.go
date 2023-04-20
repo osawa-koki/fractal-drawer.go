@@ -17,6 +17,5 @@ func App() {
 	config.Mandelbrot.Width = config.Global.Width
 	config.Mandelbrot.Height = config.Global.Height
 	config.Mandelbrot.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Mandelbrot.OutputFile)
-
 	MandelbrotDrawer(config.Mandelbrot)
 }
