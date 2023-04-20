@@ -18,4 +18,9 @@ func App() {
 	config.Mandelbrot.Height = config.Global.Height
 	config.Mandelbrot.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Mandelbrot.OutputFile)
 	MandelbrotDrawer(config.Mandelbrot)
+
+	config.Julia.Width = config.Global.Width
+	config.Julia.Height = config.Global.Height
+	config.Julia.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Julia.OutputFile)
+	JuliaDrawer(config.Julia)
 }
