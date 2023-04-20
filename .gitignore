@@ -123,3 +123,4 @@ $RECYCLE.BIN/
 /**/dist/*.png
 /**/dist/*.txt
 !.gitkeep
+!tako.png
