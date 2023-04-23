@@ -38,6 +38,12 @@ func App() {
 	config.Tricorn.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Tricorn.OutputFile)
 	TricornDrawer(config.Tricorn)
 
+	config.BurningShip.Width = config.Global.Width
+	config.BurningShip.Height = config.Global.Height
+	files = append(files, config.BurningShip.OutputFile)
+	config.BurningShip.OutputFile = filepath.Join(config.Global.OutputDirectory, config.BurningShip.OutputFile)
+	BurningShipDrawer(config.BurningShip)
+
 	{ /* ファイル名一覧を出力 */
 		// 新しいファイルのパス
 		outputFile := filepath.Join(config.Global.OutputDirectory, "items.txt")

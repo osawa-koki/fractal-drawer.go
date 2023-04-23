@@ -33,3 +33,12 @@ c_imag = 0.156
 iterations = 200
 contrast = 15
 output_file = "tricorn.png"
+
+[burning_ship]
+xmin = -1.8
+xmax = -1.7
+ymin = -0.1
+ymax = 0.02
+iterations = 20
+contrast = 1
+output_file = "burning_ship.png"

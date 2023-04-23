@@ -5,6 +5,7 @@ type Config struct {
 	Mandelbrot *MandelbrotConfig `toml:"mandelbrot"`
 	Julia      *JuliaConfig      `toml:"julia"`
 	Tricorn    *TricornConfig    `toml:"tricorn"`
+	BurningShip *BurningShipConfig `toml:"burning_ship"`
 }
 
 type GlobalConfig struct {
@@ -40,6 +41,18 @@ type JuliaConfig struct {
 }
 
 type TricornConfig struct {
+	Width      int     `toml:"width"`
+	Height     int     `toml:"height"`
+	Xmin       float64 `toml:"xmin"`
+	Xmax       float64 `toml:"xmax"`
+	Ymin       float64 `toml:"ymin"`
+	Ymax       float64 `toml:"ymax"`
+	Iterations int     `toml:"iterations"`
+	Contrast   int     `toml:"contrast"`
+	OutputFile string  `toml:"output_file"`
+}
+
+type BurningShipConfig struct {
 	Width      int     `toml:"width"`
 	Height     int     `toml:"height"`
 	Xmin       float64 `toml:"xmin"`
