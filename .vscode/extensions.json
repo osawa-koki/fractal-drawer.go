@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "bungcip.better-toml",
+    "editorconfig.editorconfig",
+    "mhutchie.git-graph",
+    "github.copilot",
+    "golang.go",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint"
+  ]
+}
