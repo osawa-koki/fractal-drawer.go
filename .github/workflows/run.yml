@@ -1,4 +1,4 @@
-name: RUn
+name: Run
 
 on:
   push:
