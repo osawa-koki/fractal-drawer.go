@@ -12,7 +12,7 @@ go run .
 ```
 
 ```shell
-# 本番用コンパイル&ビルド
+# 本番用コンパイル&実行
 go build -o ./bin
 ./bin/main
 ```
