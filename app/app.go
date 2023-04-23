@@ -32,6 +32,12 @@ func App() {
 	config.Julia.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Julia.OutputFile)
 	JuliaDrawer(config.Julia)
 
+	config.Tricorn.Width = config.Global.Width
+	config.Tricorn.Height = config.Global.Height
+	files = append(files, config.Tricorn.OutputFile)
+	config.Tricorn.OutputFile = filepath.Join(config.Global.OutputDirectory, config.Tricorn.OutputFile)
+	TricornDrawer(config.Tricorn)
+
 	{ /* ファイル名一覧を出力 */
 		// 新しいファイルのパス
 		outputFile := filepath.Join(config.Global.OutputDirectory, "items.txt")

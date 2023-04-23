@@ -22,3 +22,14 @@ c_imag = 0.156
 iterations = 200
 contrast = 15
 output_file = "julia.png"
+
+[tricorn]
+xmin = -2
+ymin = -2
+xmax = +2
+ymax = +2
+c_real = -0.8
+c_imag = 0.156
+iterations = 200
+contrast = 15
+output_file = "tricorn.png"
